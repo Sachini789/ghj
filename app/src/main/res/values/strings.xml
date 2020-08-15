@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Food ordering System</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="SIGNUP">SIGN-UP</string>
+    <string name="Title">LOGIN</string>
+    <string name="EmailText">Enter Email:</string>
+    <string name="PWText">Enter Password:</string>
+</resources>
