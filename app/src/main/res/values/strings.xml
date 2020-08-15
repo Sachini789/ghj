@@ -11,4 +11,8 @@
     <string name="SPhone">Phone number:</string>
     <string name="SPW">Password:</string>
     <string name="SCPW">Confirm Password:</string>
+    <string name="LogOut">LOGOUT</string>
+    <string name="Update">UPDATE</string>
+    <string name="Delete">DELETE</string>
+    <string name="Manage">MANAGE</string>
 </resources>
