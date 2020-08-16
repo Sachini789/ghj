@@ -5,12 +5,12 @@
     <string name="Title">LOGIN</string>
     <string name="EmailText">Enter Email:</string>
     <string name="PWText">Enter Password:</string>
-    <string name="TitleS">SIGN-UP</string>
-    <string name="SName">Name :</string>
-    <string name="SEmail">Email:</string>
-    <string name="SPhone">Phone number:</string>
+    <string name="SPhone">Phone:</string>
+    <string name="SName">Name:</string>
     <string name="SPW">Password:</string>
     <string name="SCPW">Confirm Password:</string>
+    <string name="Scon">Create Account</string>
+    <string name="SEmail">Email :</string>
     <string name="LogOut">LOGOUT</string>
     <string name="Update">UPDATE</string>
     <string name="Delete">DELETE</string>
