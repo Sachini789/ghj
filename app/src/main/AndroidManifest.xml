@@ -3,19 +3,18 @@
     package="com.example.foodorderingsystem">
 
     <application
+        android:name=".firebase.FireBase"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name=".firebase.FireBase">
-
-
-        <activity android:name=".TopCategories"></activity>
-        <activity android:name=".AProfile"></activity>
-        <activity android:name=".CManage"></activity>
-        <activity android:name=".CProfile"></activity>
+        android:theme="@style/AppTheme">
+        <activity android:name=".TopEats"></activity>
+        <activity android:name=".TopCategories" />
+        <activity android:name=".AProfile" />
+        <activity android:name=".CManage" />
+        <activity android:name=".CProfile" />
         <activity android:name=".Manage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUP1" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

@@ -46,8 +46,7 @@ public class Manage extends AppCompatActivity {
             public void onClick(View view) {
                 System.out.println("ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss");// Firebase mc = mRef.child("Name");
                // mc.setValue("sssss");
-                Intent x = new Intent(Manage.this,TopCategories.class);
-                setIntent(x);
+                startActivity(new Intent(Manage.this, TopEats.class));
             }
         });
 
