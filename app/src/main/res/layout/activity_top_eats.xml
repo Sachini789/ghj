@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:background="@drawable/sbg3"
-android:layout_height="match_parent"
-tools:context=".Manage">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/sbg3"
+    android:layout_height="match_parent"
+    tools:context=".Manage">
 
     <TableLayout
-        android:layout_width="381dp"
-        android:layout_height="496dp"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="220dp">
+        android:layout_width="373dp"
+        android:layout_height="479dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        app:layout_constraintVertical_bias="0.0">
 
         <TableRow
             android:layout_width="match_parent"
@@ -20,16 +25,53 @@ tools:context=".Manage">
             <SearchView
                 android:id="@+id/searchView"
                 android:layout_width="173dp"
-                android:layout_height="30dp"
-                android:layout_marginBottom="32dp" />
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:background="#E9EDEF"
+                android:queryHint="Search" />
 
             <Button
                 android:id="@+id/btnTopEats"
-                android:layout_width="104dp"
-                android:layout_height="42dp"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="@string/topeats" />
+                android:text="Back" />
 
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="114dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/f5" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="192dp"
+                android:layout_height="126dp"
+                app:srcCompat="@drawable/f4" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="143dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="192dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/f3" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="167dp"
+                android:layout_height="132dp"
+                app:srcCompat="@drawable/f2" />
         </TableRow>
 
         <TableRow
@@ -37,79 +79,70 @@ tools:context=".Manage">
             android:layout_height="match_parent" >
 
             <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="172dp"
-                android:layout_height="165dp"
-                app:srcCompat="@drawable/a14" />
+                android:id="@+id/imageView10"
+                android:layout_width="184dp"
+                android:layout_height="129dp"
+                app:srcCompat="@drawable/f1" />
 
             <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="207dp"
+                android:id="@+id/imageView7"
+                android:layout_width="169dp"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/a13" />
-
+                app:srcCompat="@drawable/f6" />
         </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
     </TableLayout>
 
     <ImageView
-    android:id="@+id/imageView"
-    android:layout_width="156dp"
-    android:layout_height="155dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.062"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.0"
-    app:srcCompat="@drawable/logo" />
+        android:id="@+id/imageView"
+        android:layout_width="156dp"
+        android:layout_height="155dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
 
-<Button
-    android:id="@+id/LogOut"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/LogOut"
-    android:textSize="18sp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.786"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.081" />
-
-<com.google.android.material.tabs.TabLayout
-    android:id="@+id/tabLayout"
-    android:layout_width="409dp"
-    android:layout_height="wrap_content"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.265"
-    app:tabIndicatorColor="#3F51B5">
-
-    <com.google.android.material.tabs.TabItem
+    <Button
+        android:id="@+id/LogOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MENU" />
+        android:text="@string/LogOut"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
 
-    <com.google.android.material.tabs.TabItem
-        android:layout_width="wrap_content"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:text="Shoppin Cart" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265"
+        app:tabIndicatorColor="#3F51B5">
 
-    <com.google.android.material.tabs.TabItem
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Profile" />
-</com.google.android.material.tabs.TabLayout>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MENU" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoppin Cart" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile" />
+    </com.google.android.material.tabs.TabLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
