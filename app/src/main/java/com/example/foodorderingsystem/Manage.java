@@ -44,8 +44,10 @@ public class Manage extends AppCompatActivity {
         Amng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Firebase mc = mRef.child("Name");
-                mc.setValue("sssss");
+                System.out.println("ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss");// Firebase mc = mRef.child("Name");
+               // mc.setValue("sssss");
+                Intent x = new Intent(Manage.this,TopCategories.class);
+                setIntent(x);
             }
         });
 

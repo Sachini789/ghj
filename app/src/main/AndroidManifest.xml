@@ -10,26 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:name=".firebase.FireBase">
-        <activity android:name=".AProfile">
 
-        </activity>
-        <activity android:name=".CManage">
 
-        </activity>
-        <activity android:name=".CProfile">
-
-        </activity>
+        <activity android:name=".TopCategories"></activity>
+        <activity android:name=".AProfile"></activity>
+        <activity android:name=".CManage"></activity>
+        <activity android:name=".CProfile"></activity>
         <activity android:name=".Manage">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".SignUP1"/>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".SignUP1" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
